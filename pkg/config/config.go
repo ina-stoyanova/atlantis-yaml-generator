@@ -81,6 +81,13 @@ var ParameterList = []Parameter{
 		Shorthand:    "w",
 	},
 	{
+		Name:         "workspace",
+		Description:  "Define the name of the workspace you want to be used.",
+		Required:     false,
+		DefaultValue: "default",
+		Shorthand:    "ws",
+	},
+	{
 		Name:         "when-modified",
 		Description:  "Atlantis will trigger an autoplan when these modifications occur (list of strings).",
 		Required:     false,
