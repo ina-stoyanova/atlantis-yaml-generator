@@ -13,8 +13,7 @@ func singleWorkspaceDiscoveryFilter(info os.FileInfo, path, patternDetector stri
 
 func singleWorkspaceDetectProjectWorkspaces(foldersList []ProjectFolder) ([]ProjectFolder, error) {
 	for i := range foldersList {
-		foldersList[i].WorkspaceList = []string{"default"}
+		foldersList[i].WorkspaceList = []string{foldersList[i].Path}
 	}
 	return foldersList, nil
-
 }
